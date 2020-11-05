@@ -48,9 +48,11 @@ init-connect='SET NAMES utf8mb4'
 
 
 - 允许远程连接mysql
-
+```
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Hello123!' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
+
+```
 
 
 

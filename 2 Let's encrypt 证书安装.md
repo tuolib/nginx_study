@@ -15,7 +15,19 @@
 - mac: sftp 传输文件工具：FileZilla; 命令行工具：自带终端就可以连接服务器
 - windows: sftp 传输文件工具: winScp; 命令行工具：xshell
 
-### 方法一 使用acme 安装 
+### 方法1 cerbot-auto 安装 
+
+```
+cd /usr/local/bin
+wget https://dl.eff.org/certbot-auto
+chmod a+x certbot-auto
+./certbot-auto
+
+```
+
+ssl_trusted_certificate /etc/letsencrypt/live/example.com/chain.pem;
+
+### 方法2 使用acme 安装 
 
 ```
 yum install socat
@@ -42,7 +54,7 @@ acme.sh  --ecc --installcert -d test.connorfree.ml --key-file /root/v2r/test.con
 acme.sh --upgrade --auto-upgrade
 ```
 
-### 方法二 cerbot 安装 
+### 方法3 cerbot 安装 
 
 ```
 yum install epel-release
@@ -70,7 +82,9 @@ ssl_certificate "/etc/letsencrypt/live/test.connorfree.ml/fullchain.pem";
 ssl_certificate_key "/etc/letsencrypt/live/test.connorfree.ml/privkey.pem";
 
 ```
-### 方法3 cerbot-auto 安装 
+
+
+### 方法4 cerbot-auto 安装 
 https://xieyonghui.com/tech/lets-encrypt_181.html
 
 ```
@@ -83,14 +97,4 @@ https://xieyonghui.com/tech/lets-encrypt_181.html
 ```
 
 
-### 方法4 cerbot-auto 安装 
 
-```
-cd /usr/local/bin
-wget https://dl.eff.org/certbot-auto
-chmod a+x certbot-auto
-./certbot-auto
-
-```
-
-ssl_trusted_certificate /etc/letsencrypt/live/example.com/chain.pem;

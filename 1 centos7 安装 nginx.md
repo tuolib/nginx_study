@@ -60,3 +60,18 @@ sudo firewall-cmd --reload
 
 ```
 
+- 403 forbidden
+
+```
+
+# 前端打包文件夹给权限
+chmod 755  /var/www/*
+```
+
+- 502 bad gateway
+
+```
+setsebool -P httpd_can_network_connect 1
+
+```
+

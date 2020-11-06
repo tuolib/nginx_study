@@ -83,9 +83,14 @@ https://xieyonghui.com/tech/lets-encrypt_181.html
 ```
 
 
-cd /use/local/bin
+### 方法4 cerbot-auto 安装 
+
+```
+cd /usr/local/bin
 wget https://dl.eff.org/certbot-auto
 chmod a+x certbot-auto
 ./certbot-auto
+
+```
 
 ssl_trusted_certificate /etc/letsencrypt/live/example.com/chain.pem;

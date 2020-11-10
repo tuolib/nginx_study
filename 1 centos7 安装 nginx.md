@@ -1,15 +1,6 @@
-### 方法1 使用 yum 安装
-
-- 使用网站中的 yum 安装
-https://juejin.im/post/6844904134345228301
 
 
-- https://www.mynotepaper.com/install-nginx-on-centos-7
-
-
-
-
-### 方法2 安装最新版本
+### 方法1 安装最新版本
 
 - Configure Nginx Repo
 
@@ -59,6 +50,17 @@ sudo firewall-cmd --permanent --zone=public --add-service=https
 sudo firewall-cmd --reload
 
 ```
+
+### 方法1 使用 yum 安装
+
+- 使用网站中的 yum 安装 https://juejin.im/post/6844904134345228301
+
+
+- https://www.mynotepaper.com/install-nginx-on-centos-7
+
+
+
+### 常见错误
 
 - 403 forbidden
 

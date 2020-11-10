@@ -66,6 +66,8 @@ sudo firewall-cmd --reload
 
 # 前端打包文件夹给权限
 chmod 755  /var/www/*
+restorecon -r /var/www/html
+chown  -R  nginx:nginx /var/www/html
 ```
 
 - 502 bad gateway

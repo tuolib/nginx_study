@@ -70,6 +70,7 @@ sudo firewall-cmd --reload
 chmod 755  /var/www/*
 restorecon -r /var/www/html
 chown  -R  nginx:nginx /var/www/html
+chcon -R -t httpd_sys_content_t
 ```
 
 - 502 bad gateway
